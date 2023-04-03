@@ -1,0 +1,7 @@
+.About p{
+	display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bold;
+}

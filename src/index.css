@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+}
+.App {
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  /* grid-template-rows: 10% 20% 70%; */
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  
+}
+
+.App>.Header {
+  background-color: yellow;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  grid-column: 12 span;
+  grid-row: 1 span;
+  border: 2px solid black;
+}
+
+.App>.Menu {
+  background-color: pink;
+  grid-column:2 span;
+  grid-row: 10 span;
+  display:grid; 
+  border: 2px solid black;
+  
+}
+
+.App>.Main {
+  background-color: rgb(240, 247, 240);
+  grid-column: 10 span;
+  grid-row: 10 span;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.App>.Footer {
+  background-color: orangered;
+  grid-column: 12 span;
+  grid-row: 1 span;
+  font-size: 24px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+input{
+  margin: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 20px;
+  }
+  .states{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+
+  }
+
